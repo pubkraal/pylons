@@ -165,7 +165,6 @@ class PylonsApp(object):
         # Setup the basic pylons global objects
         req_options = self.request_options
         req = Request(environ, charset=req_options['charset'],
-                      unicode_errors=req_options['errors'],
                       decode_param_names=req_options['decode_param_names'])
         req.language = req_options['language']
         req.config = self.config

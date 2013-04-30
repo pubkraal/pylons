@@ -60,7 +60,6 @@ class SetupCacheGlobal(object):
 
         # Update the environ
         req = Request(environ, charset=request_defaults['charset'],
-                      unicode_errors=request_defaults['errors'],
                       decode_param_names=request_defaults['decode_param_names']
         )
         req.language = request_defaults['language']
